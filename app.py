@@ -6,7 +6,7 @@ from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///C:/Users/hp/OneDrive/Desktop/Rohan/flask/todo.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///todo.db'
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
