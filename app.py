@@ -61,14 +61,11 @@ def delete(SNO):
 
 
 
-if __name__ == "__main__":
-    # create tables inside app context
+if __name__ == '__main__':
     with app.app_context():
         db.create_all()
-
-    # Render (and many PaaS) may set PORT; default to 8000 locally
-    port = int(os.environ.get("PORT", 8000))
-    app.run(host="0.0.0.0", port=port, debug=True) # run in debug mode which show in brower , you can change port
+    app.run(debug=True , port=8000)
+# run in debug mode which show in brower , you can change port
 #static folder serve file aztice
 #render_template is used with return, used for render template file like html
 #bootsrap has already written some website code platform
